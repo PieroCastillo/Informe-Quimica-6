@@ -20,6 +20,7 @@
 \usepackage{booktabs}
 \usepackage{subcaption}
 \usepackage{adjustbox}
+\usepackage{array}
 
 % external imports
 \usepackage{graphicx}
@@ -29,8 +30,6 @@
 \usepackage{csquotes}
 \usepackage[style=authoryear]{biblatex}
 \addbibresource{resources/references.bib}
-
-%\AtBeginDocument{\RenewCommandCopy\qty\SI} %compiler's bug's patch
 
 \begin{document}
 \subfile{parts/cover}
@@ -44,25 +43,25 @@
 \tableofcontents
 \clearpage
 
+\section{Introducción}
+\subsection{parts/introduction}
+
 \section{Objetivos}
 \subfile{parts/objectives}
 
-\section{Marco teórico}
-\subfile{parts/theory}
+\section{Fundamento Teórico}
+\subfile{parts/fundaments}
 
-\section{Equipo utilizado}
-\subfile{parts/equipment}
-
-\section{Procedimientos}
+\section{Procedimiento Experimental}
 \subfile{parts/procedures}
 
-\section{Tablas de datos}
-\subfile{parts/tables}
+\section{Observaciones Experimentales y/o Datos tabulados}
+\subfile{parts/tablesAndObservations}
 
-\section{Cálculos y resultados}
+\section{Cálculos, Reacciones químicas y/o Resultados tabulados}
 \subfile{parts/results}
 
-\section{Discusiones}
+\section{Discusion de Resultados}
 \subfile{parts/discussion}
 
 \section{Conclusiones}
