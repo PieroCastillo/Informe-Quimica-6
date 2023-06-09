@@ -1,0 +1,15 @@
+temp/
+sections/temp/
+*.aux
+*.lof
+*.log
+*.lot
+*.out
+*.synctex(busy)
+*.pdf
+*.toc
+*.bbl
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.blg
