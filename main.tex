@@ -29,8 +29,10 @@
 % references
 \usepackage{hyperref}
 \usepackage{csquotes}
-\usepackage[style=authoryear]{biblatex}
-\addbibresource{resources/references.bib}
+
+%bibliografia
+\usepackage[square,numbers]{natbib} 
+\bibliographystyle{abbrvnat}
 
 %graphics
 \usepackage{tikz}
@@ -85,7 +87,8 @@
 \subfile{parts/conclusion}
 
 \section{Bibliografía}
-\printbibliography
+\renewcommand{\bibsection}{}
+\bibliography{resources/references}
 
 \clearpage
 
@@ -93,6 +96,4 @@
 \listoftables
 
 \clearpage
-
-\section{Anexo}
 \end{document}
