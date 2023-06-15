@@ -4,15 +4,44 @@
 
     \subsection{Experimento 1: Determinación del orden de la reacción.}
     \begin{enumerate}
-    \item Se ubican los 6 tubos de ensayo vacíos que se pueden identificar con un numero y una letra (1A, 2A, 3A, 1B, 2B y 3B).
-    \item A continuación se colocará cierta cantidad de militros de $K_2$$S_2$$O_8$ 1 M a cada tubo de ensayo con la letra A (2.5 mL al tubo con la etiqueta 1A, 2.5 mL al tubo de etiqueta 2A y 1.5 mL al tubo de etiqueta 3A).
+    \item Se ubican los 6 tubos de ensayo vacíos que se pueden identificar con un número y una letra (1A, 2A, 3A, 1B, 2B y 3B).
+    \item A continuación se colocará cierta cantidad de militros de $K_2S_2O_8$ 1 M a cada tubo de ensayo con la letra A (2.5 mL al tubo con la etiqueta 1A, 2.5 mL al tubo de etiqueta 2A y 1.5 mL al tubo de etiqueta 3A).
     \item Después, se colocará 5 mL del indicador (almidón 2\%) más tiosulfato de sodio 0.0001 M  a cada tubo de ensayo con la letra B.
-    \item  Luego, agregue cierta cantidad de mililitro de $KI$ 0,1 M y agua acada tubo de ensayo B (2.5 mL de $KI$ 0,1 M y 0.0 mL de $H_2O$  al tubo con la etiqueda 1B,  2.0 mL de $KI$ 0,1 M y 0.5 mL de $H_2O$  al tubo con la etiqueda 2B y 2.0 mL de $KI$ 0,1 M y 1.0 mL de $H_2O$  al tubo con la etiqueda 3B).
+    \item Luego, agregue cierta cantidad de mililitro de $KI$ 0,1 M y agua a cada tubo de ensayo B (2.5 mL de $KI$ 0,1 M y 0.0 mL de $H_2O$  al tubo con la etiqueda 1B,  2.0 mL de $KI$ 0,1 M y 0.5 mL de $H_2O$  al tubo con la etiqueda 2B y 2.0 mL de $KI$ 0,1 M y 1.0 mL de $H_2O$  al tubo con la etiqueda 3B).
     \item Posteriormente, se juntará las soluciones de los tubos con el mismo número (1A con 1B, 2A con 2B y 3A con 3B) y se tomará el tiempo en el hasta que la mezcla se torne de color azul.
     \item Por consiguiente, se anota el tiempo cronometrado entre cada tubo de ensayo con el mismo número.
-    \item Seguidamente, se halla la velocidad de reacción de cada mezcla y se iguala con la formula: $V=k\cdot[I^{-}]^{m}[S_2O_8^{2-}]^{n}$ para hallar los valores de m y n.
-    \item Finalmente, la suma de m y n nos da el orden de la reacción.
+    \item Seguidamente, se halla la velocidad de reacción de cada mezcla y se iguala con la formula: $V=k\cdot[I^{-}]^m\cdot[S_2O_8^{2-}]^n$ para hallar los valores de m y n.
+    \item Finalmente, la suma de $m$ y $n$ nos da el orden de la reacción.
     \end{enumerate}
+
+    \begin{figure}[H]
+        \hspace{1em}
+        \tikzstyle{celeste}=[ellipse, draw = celesteOscuro, fill = celeste, text centered, text = black, text width = 7cm]
+        \tikzstyle{naranja}=[rectangle, rounded corners, draw = naranjaOscuro, fill = naranja, text centered, text = black, text width = 9cm]
+        \tikzstyle{linea}=[-]
+    
+        \begin{center}
+        \begin{tikzpicture}[align = center, node distance = 2cm]
+        \node (titulo) [celeste] {Determinación de el orden de la reacción de oxidación del ion $[I^-]$ cuando interactúa con el ion $[S_2O_8^{2-}]$ a temperatura constante.};
+    
+        \node (cuadro1) [naranja, below = 0.9cm of titulo] {Se ubican los 6 tubos de ensayo vacíos que se pueden identificar con un número y una letra};
+    
+        \node (cuadro2) [naranja, below = 0.9cm of cuadro1] {Colocar los reactivos en sus respectivos tubos de ensayo.};
+    
+        \node (cuadro3) [naranja, below = 0.9cm of cuadro2] {Iniciar la reacción vaciando el contenido de los tubos en otros (según lo indicado anteriormente).};
+    
+        \node (cuadro4) [naranja, below = 0.9cm of cuadro3] {Anotar los datos medidos directamente del experimento.};
+    
+        \draw[linea] (titulo.south) |- (cuadro1.north);
+        \draw[linea] (cuadro1.south) |- (cuadro2.north);
+        \draw[linea] (cuadro2.south) |- (cuadro3.north);
+        \draw[linea] (cuadro3.south) |- (cuadro4.north);
+    
+        \end{tikzpicture}        
+        \end{center}
+        \label{fig:proc_1}
+        \caption{Diagrama de flujo resumen del experimento 1 \cite{lab}}
+    \end{figure}
 
     \subsection{Experimento 2: Efecto de la temperatura sobre la velocidad.}
     \begin{enumerate}
@@ -22,14 +51,77 @@
     \item Finalmente, se comparar con la velocidad obtenida en el primer experimento y observar si hay variaciones.
     \end{enumerate}
 
+    
+    \begin{figure}[H]
+        \hspace{1em}
+        \tikzstyle{celeste}=[ellipse, draw = celesteOscuro, fill = celeste, text centered, text = black, text width = 7cm]
+        \tikzstyle{naranja}=[rectangle, rounded corners, draw = naranjaOscuro, fill = naranja, text centered, text = black, text width = 9cm]
+        \tikzstyle{linea}=[-]
+    
+        \begin{center}
+        \begin{tikzpicture}[align = center, node distance = 2cm]
+        \node (titulo) [celeste] {Efecto de la temperatura sobre la velocidad.};
+    
+        \node (cuadro1) [naranja, below = 0.9cm of titulo] {Escojer la muestra que haya tenido la menor velocidad de reacción.};
+    
+        \node (cuadro2) [naranja, below = 0.9cm of cuadro1] {Calentar las muestras cómo se indica.};
+    
+        \node (cuadro3) [naranja, below = 0.9cm of cuadro2] {Iniciar la reacción vaciando el contenido de los tubos en otros (según lo indicado anteriormente).};
+    
+        \node (cuadro4) [naranja, below = 0.9cm of cuadro3] {Anotar los datos medidos directamente del experimento para así obtener la velocidad de reacción.};
+    
+        \draw[linea] (titulo.south) |- (cuadro1.north);
+        \draw[linea] (cuadro1.south) |- (cuadro2.north);
+        \draw[linea] (cuadro2.south) |- (cuadro3.north);
+        \draw[linea] (cuadro3.south) |- (cuadro4.north);
+    
+        \end{tikzpicture}        
+        \end{center}
+        \label{fig:proc_2}
+        \caption{Diagrama de flujo resumen del experimento 2 \cite{lab}}
+    \end{figure}
+
     \subsection{Experimento 3: Efecto de los catalizadores sobre la velocidad de reacción.}
     \begin{enumerate}
-    \item Del experimento N°1, se escoje la mezcla que haya tenido el menor valor de velocidad de reacción y se prepara en 3 tubos de ensayo  $K_2$$S_2$$O_8$ con la misma concentración (los tubos se etiquetarán con las letras A, B y C para distinguirlos).  
+    \item Del experimento N°1, se escoje la mezcla que haya tenido el menor valor de velocidad de reacción y se prepara en 3 tubos de ensayo  $K_2S_2O_8$ con la misma concentración (los tubos se etiquetarán con las letras A, B y C para distinguirlos).  
     \item En el tubo A, se le agrega una gota de nitrato de cobre 1 M.
     \item En el tubo B, se le agrega una gota de nitrato de plata 1 M.
     \item En el tubo C, se le agrega una gota de agua.
     \item Luego, se mezcla $KI$ más almidón más tiosulfato más agua como en el experimento N°1.
     \item Después, se toma el tiempo de reacción de cada una de las mezclas con sus respectivos catalizadores y ver si producieron algún efecto en la velocidad de la reacción.
     \end{enumerate}
+
+    
+    \begin{figure}[H]
+        \hspace{1em}
+        \tikzstyle{celeste}=[ellipse, draw = celesteOscuro, fill = celeste, text centered, text = black, text width = 7cm]
+        \tikzstyle{naranja}=[rectangle, rounded corners, draw = naranjaOscuro, fill = naranja, text centered, text = black, text width = 9cm]
+        \tikzstyle{linea}=[-]
+    
+        \begin{center}
+        \begin{tikzpicture}[align = center, node distance = 2cm]
+        \node (titulo) [celeste] {Efecto de los catalizadores sobre la velocidad de reacción.};
+    
+        \node (cuadro1) [naranja, below = 0.9cm of titulo] {Escojer la mezcla con la menor velocidad de reacción.};
+    
+        \node (cuadro2) [naranja, below = 0.9cm of cuadro1] {Colocar los reactivos en sus respectivos tubos de ensayo.};
+    
+        \node (cuadro3) [naranja, below = 0.9cm of cuadro2] {Colocar los posibles catalizadores en cada muestra.};
+
+        \node (cuadro4) [naranja, below = 0.9cm of cuadro3] {Iniciar la reacción.};
+    
+        \node (cuadro5) [naranja, below = 0.9cm of cuadro3] {Anotar los datos medidos del experimento.};
+    
+        \draw[linea] (titulo.south) |- (cuadro1.north);
+        \draw[linea] (cuadro1.south) |- (cuadro2.north);
+        \draw[linea] (cuadro2.south) |- (cuadro3.north);
+        \draw[linea] (cuadro3.south) |- (cuadro4.north);
+        \draw[linea] (cuadro4.south) |- (cuadro5.north);
+    
+        \end{tikzpicture}        
+        \end{center}
+        \label{fig:proc_3}
+        \caption{Diagrama de flujo resumen del experimento 3 \cite{lab}}
+    \end{figure}
 
 \end{document}
